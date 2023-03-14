@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import stocksReducer from './stocks/stocksSlice';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    stocks: stocksReducer,
+  },
 });
 
 export default store;
