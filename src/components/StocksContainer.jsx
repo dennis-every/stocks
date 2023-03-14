@@ -9,8 +9,10 @@ const StocksContainer = () => {
   const stocksArray = useSelector((store) => store.stocks.stocksArray);
 
   useEffect(() => {
-    dispatch(fetchStocks());
-  }, [dispatch, ifSucceed]);
+    if (stocksArray.length === 0) {
+      dispatch(fetchStocks());
+    }
+  }, [dispatch, ifSucceed, stocksArray]);
 
   return (
     <>
