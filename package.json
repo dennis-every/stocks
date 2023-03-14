@@ -36,6 +36,11 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
