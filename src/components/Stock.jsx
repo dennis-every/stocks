@@ -33,12 +33,12 @@ const Stock = (props) => {
 Stock.propTypes = {
   symbol: PropTypes.string.isRequired,
   companyName: PropTypes.string.isRequired,
-  marketCap: PropTypes.string.isRequired,
+  marketCap: PropTypes.number.isRequired,
   sector: PropTypes.string.isRequired,
-  beta: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  lastAnnualDividend: PropTypes.string.isRequired,
-  volume: PropTypes.string.isRequired,
+  beta: PropTypes.number.isRequired,
+  price: PropTypes.number.isRequired,
+  lastAnnualDividend: PropTypes.number.isRequired,
+  volume: PropTypes.number.isRequired,
   exchangeShortName: PropTypes.string.isRequired,
 };
 
