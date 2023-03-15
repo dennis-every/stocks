@@ -2,6 +2,8 @@
 
 <div align="center">
   <h1><b>STOCKS</b></h1>
+  <img src="./src/images/Screenshot1.png" alt="mobile_home_page" width="45%"  height="100%" />
+  <img src="./src/images/Screenshot2.png" alt="mobile_detail_page" width="45%"  height="100%" />
   <br />
 </div>
 
