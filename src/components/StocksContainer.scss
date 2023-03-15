@@ -13,13 +13,17 @@
 
   .stock {
     border: 1px solid #345fae;
-    padding: 15% 0.5rem;
+    padding: 0.5rem;
     flex: 1 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
     line-height: 1.6rem;
+
+    div {
+      margin: 2rem 0;
+    }
 
     a {
       color: white;

@@ -1,3 +1,3 @@
-const Show = () => <h1>Show</h1>;
+const Show = () => ({});
 
 export default Show;
