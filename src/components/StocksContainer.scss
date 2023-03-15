@@ -1,0 +1,36 @@
+.total {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #345fae;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  .stock {
+    border: 1px solid #345fae;
+    padding: 15% 0.5rem;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.6rem;
+
+    a {
+      color: white;
+    }
+  }
+
+  .even {
+    background: #284e97;
+  }
+
+  .odd {
+    background: #2b55a3;
+  }
+}
