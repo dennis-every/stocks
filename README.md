@@ -71,6 +71,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Visit](https://stocks-1mvz.onrender.com/)
+- [Watch](https://www.loom.com/share/724849078eef4ed08f227e65eb31c6fa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
