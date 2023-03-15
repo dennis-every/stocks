@@ -1,0 +1,17 @@
+nav {
+  background: #406bae;
+  color: white;
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: white;
+    }
+  }
+}

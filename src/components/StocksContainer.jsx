@@ -17,13 +17,13 @@ const StocksContainer = () => {
   return (
     <>
       <h3>LIST</h3>
-      <ul>
+      <ol>
         {stocksArray.map((stock) => (
           <li key={stock.symbol}>
             <NavLink to={`stock/${stock.symbol}`}>{stock.companyName}</NavLink>
           </li>
         ))}
-      </ul>
+      </ol>
     </>
   );
 };
