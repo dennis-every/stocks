@@ -34,10 +34,10 @@
 
 # 📖 About <a name="about"></a>
 
-**STOCKS** is a single page application (SPA) which:
+**STOCKS** is a single page web application (SPA) built with React, Redux, Axios, and Jest, which:
 
-- Shows users a list of popular companies' stock tickers
-- Shows users detailed financial metrics for each company stock ticker
+- Shows a list of popular companies' stock tickers
+- Shows detailed financial metrics for each company stock ticker
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Pending](https://stocks.onrender.com)
+- [Visit](https://stocks-1mvz.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,11 +117,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add reducers and actions**
-- [ ] **Use Redux in React components**
-- [ ] **Connect to API**
-- [ ] **Add Styles**
-- [ ] **Deployment**
+- [ ] **none planned**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +143,9 @@ If you like this project feel free to fork it and use it as you need.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the information provided to build this project.
+- Original [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+- [Project information](https://github.com/microverseinc/curriculum-react-redux/blob/main/capstone/react_capstone.md) to build this project provided by [Microverse](https://www.microverse.org/).
+- All data provided by [Financial Modeling Prep](https://site.financialmodelingprep.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +159,8 @@ I would like to thank Microverse for the information provided to build this proj
 
 - **Is the information saved in any database?**
 
-  - No, all data is saved in the involvement api
+  - No data is saved in any database.
+  - All data provided by [Financial Modeling Prep](https://site.financialmodelingprep.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
