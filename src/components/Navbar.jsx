@@ -5,7 +5,7 @@ import { BsPatchQuestionFill, BsFillHouseDoorFill } from 'react-icons/bs';
 const Navbar = () => {
   const links = [
     { path: '/', text: <BsFillHouseDoorFill />, key: 1 },
-    { path: '/', text: 'market cap', key: 2 },
+    { path: '/', text: 'Market Cap', key: 2 },
     { path: 'about', text: <BsPatchQuestionFill />, key: 3 },
   ];
 

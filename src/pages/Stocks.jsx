@@ -1,13 +1,5 @@
 import StocksContainer from '../components/StocksContainer';
 
-const Stocks = () => {
-  const title = 'Stocks';
-  return (
-    <>
-      <h1>{title}</h1>
-      <StocksContainer />
-    </>
-  );
-};
+const Stocks = () => <StocksContainer />;
 
 export default Stocks;
