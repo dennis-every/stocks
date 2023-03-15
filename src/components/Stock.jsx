@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './Stock.scss';
 
 const Stock = (props) => {
   const {
@@ -14,19 +15,74 @@ const Stock = (props) => {
   } = props;
 
   return (
-    <>
-      <h3>{`Name: ${companyName}`}</h3>
+    <section>
+      <h1>{companyName}</h1>
       <ul>
-        <li>{`Symbol: ${symbol}`}</li>
-        <li>{`Market cap: ${marketCap}`}</li>
-        <li>{`Sector: ${sector}`}</li>
-        <li>{`Beta: ${beta}`}</li>
-        <li>{`Price: ${price}`}</li>
-        <li>{`Exchange: ${exchangeShortName}`}</li>
-        <li>{`Volume: ${volume}`}</li>
-        <li>{`Last annual dividend: ${lastAnnualDividend}`}</li>
+        <li className="item even">
+          <span>Symbol</span>
+          <span>{symbol}</span>
+        </li>
+        <li className="item odd">
+          <span>Market cap</span>
+          <span>
+            {marketCap.toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD',
+              minimumFractionDigits: 0,
+              maximumFractionDigits: 0,
+            })}
+          </span>
+        </li>
+        <li className="item even">
+          <span>Sector</span>
+          <span>{sector}</span>
+        </li>
+        <li className="item odd">
+          <span>Beta</span>
+          <span>
+            {beta.toLocaleString('en-US', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })}
+          </span>
+        </li>
+        <li className="item even">
+          <span>Price</span>
+          <span>
+            {price.toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD',
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })}
+          </span>
+        </li>
+        <li className="item odd">
+          <span>Exchange</span>
+          <span>{exchangeShortName}</span>
+        </li>
+        <li className="item even">
+          <span>Volume</span>
+          <span>
+            {volume.toLocaleString('en-US', {
+              minimumFractionDigits: 0,
+              maximumFractionDigits: 0,
+            })}
+          </span>
+        </li>
+        <li className="item odd">
+          <span>Last annual dividend</span>
+          <span>
+            {lastAnnualDividend.toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD',
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })}
+          </span>
+        </li>
       </ul>
-    </>
+    </section>
   );
 };
 

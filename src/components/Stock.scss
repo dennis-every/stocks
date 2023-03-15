@@ -1,0 +1,40 @@
+section {
+  h1 {
+    background: #345fae;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .item {
+      height: 10rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        text-transform: uppercase;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    .even {
+      background: #284e97;
+    }
+
+    .odd {
+      background: #2b55a3;
+    }
+  }
+}
