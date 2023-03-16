@@ -1,40 +1,96 @@
 .total {
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #345fae;
+  height: 12rem;
+  background: #5484e1;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .icon {
+    height: 100%;
+    color: #2d4472;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+      font-size: 1.8rem;
+    }
+  }
 }
 
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
+.header {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background: #3d5a99;
+}
+
+.stocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   .stock {
-    border: 1px solid #345fae;
-    padding: 0.5rem;
-    flex: 1 0 auto;
+    height: 10rem;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
     line-height: 1.6rem;
-
-    div {
-      margin: 2rem 0;
-    }
+    background: #456fb3;
 
     a {
       color: white;
     }
+
+    .topHalf {
+      box-sizing: border-box;
+      height: 5rem;
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+
+      .icon {
+        color: #2d4472;
+        font-size: 5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .arrow {
+        text-align: right;
+        padding: 0.5rem;
+        color: white;
+        :first-child {
+          border: 1px solid white;
+          border-radius: 50%;
+          padding: 0.1rem;
+        }
+      }
+    }
+    .bottomHalf {
+      box-sizing: border-box;
+      height: 5rem;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: flex-end;
+      text-align: right;
+      padding: 0.5rem;
+    }
   }
 
-  .even {
-    background: #284e97;
-  }
-
-  .odd {
-    background: #2b55a3;
+  .stock:nth-child(4n + 2),
+  .stock:nth-child(4n + 3):not(:first-child) {
+    background-color: #3e61a3;
   }
 }

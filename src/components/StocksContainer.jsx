@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { BsChevronRight } from 'react-icons/bs';
+import { BsBarChartLineFill } from 'react-icons/bs';
+import { MdCandlestickChart } from 'react-icons/md';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+
 import { fetchStocks } from '../redux/stocks/stocksSlice';
 import './StocksContainer.scss';
 
@@ -20,26 +23,41 @@ const StocksContainer = () => {
   return (
     <main>
       <section className="total">
-        <h1>
-          STOCKS TOTAL MARKET CAP
-          <br />
-          {sum.toLocaleString('en-US', {
-            style: 'currency',
-            currency: 'USD',
-            minimumFractionDigits: 0,
-            maximumFractionDigits: 0,
-          })}
-        </h1>
+        <div className="icon">
+          <BsBarChartLineFill />
+        </div>
+        <div className="title">
+          <div>
+            <span className="text">TOTAL</span>
+            <br />
+            <span className="value">
+              {sum.toLocaleString('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+              })}
+            </span>
+          </div>
+        </div>
       </section>
-      <section className="wrap">
-        {stocksArray.map((stock, idx) => (idx % 2 === 0 ? (
-          <span className="stock even" key={stock.symbol}>
+      <section className="header">
+        <span>Stats by company</span>
+      </section>
+      <section className="stocks">
+        {stocksArray.map((stock) => (
+          <span className="stock" key={stock.symbol}>
             <NavLink to={`stock/${stock.symbol}`}>
-              <div><BsChevronRight /></div>
-              <div>
-                {stock.companyName}
-                <br />
-                Market Cap
+              <div className="topHalf">
+                <div className="icon">
+                  <MdCandlestickChart />
+                </div>
+                <div className="arrow">
+                  <AiOutlineArrowRight />
+                </div>
+              </div>
+              <div className="bottomHalf">
+                {stock.symbol}
                 <br />
                 {stock.marketCap.toLocaleString('en-US', {
                   style: 'currency',
@@ -50,25 +68,7 @@ const StocksContainer = () => {
               </div>
             </NavLink>
           </span>
-        ) : (
-          <span className="stock odd" key={stock.symbol}>
-            <NavLink to={`stock/${stock.symbol}`}>
-              <div><BsChevronRight /></div>
-              <div>
-                {stock.companyName}
-                <br />
-                Market Cap
-                <br />
-                {stock.marketCap.toLocaleString('en-US', {
-                  style: 'currency',
-                  currency: 'USD',
-                  minimumFractionDigits: 0,
-                  maximumFractionDigits: 0,
-                })}
-              </div>
-            </NavLink>
-          </span>
-        )))}
+        ))}
       </section>
     </main>
   );

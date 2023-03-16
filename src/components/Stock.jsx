@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import './Stock.scss';
+import { BsBarChartLineFill } from 'react-icons/bs';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Stock = (props) => {
   const {
@@ -16,11 +18,20 @@ const Stock = (props) => {
 
   return (
     <section>
-      <h1>{companyName}</h1>
+      <header>
+        <div className="icon"><BsBarChartLineFill /></div>
+        <h1 className="name">{companyName}</h1>
+      </header>
+      <div className="breakdown">
+        <span>data breakdown</span>
+      </div>
       <ul>
         <li className="item even">
           <span>Symbol</span>
-          <span>{symbol}</span>
+          <span>
+            {symbol}
+            <span className="arrow"><AiOutlineArrowRight /></span>
+          </span>
         </li>
         <li className="item odd">
           <span>Market cap</span>
@@ -31,11 +42,15 @@ const Stock = (props) => {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0,
             })}
+            <span className="arrow"><AiOutlineArrowRight /></span>
           </span>
         </li>
         <li className="item even">
           <span>Sector</span>
-          <span>{sector}</span>
+          <span>
+            {sector}
+            <span className="arrow"><AiOutlineArrowRight /></span>
+          </span>
         </li>
         <li className="item odd">
           <span>Beta</span>
@@ -44,6 +59,7 @@ const Stock = (props) => {
               minimumFractionDigits: 2,
               maximumFractionDigits: 2,
             })}
+            <span className="arrow"><AiOutlineArrowRight /></span>
           </span>
         </li>
         <li className="item even">
@@ -55,11 +71,15 @@ const Stock = (props) => {
               minimumFractionDigits: 2,
               maximumFractionDigits: 2,
             })}
+            <span className="arrow"><AiOutlineArrowRight /></span>
           </span>
         </li>
         <li className="item odd">
           <span>Exchange</span>
-          <span>{exchangeShortName}</span>
+          <span>
+            {exchangeShortName}
+            <span className="arrow"><AiOutlineArrowRight /></span>
+          </span>
         </li>
         <li className="item even">
           <span>Volume</span>
@@ -68,6 +88,7 @@ const Stock = (props) => {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0,
             })}
+            <span className="arrow"><AiOutlineArrowRight /></span>
           </span>
         </li>
         <li className="item odd">
@@ -79,6 +100,7 @@ const Stock = (props) => {
               minimumFractionDigits: 2,
               maximumFractionDigits: 2,
             })}
+            <span className="arrow"><AiOutlineArrowRight /></span>
           </span>
         </li>
       </ul>

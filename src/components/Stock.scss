@@ -1,13 +1,36 @@
 section {
-  h1 {
-    background: #345fae;
+  font-weight: bold;
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #5484e1;
     height: 10rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 0;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      font-size: 5rem;
+      color: #2d4472;
+    }
+
+    .name {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 0;
+    }
+  }
+
+  .breakdown {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background: #3d5a99;
   }
 
   ul {
@@ -26,6 +49,13 @@ section {
         text-transform: uppercase;
         padding-left: 1rem;
         padding-right: 1rem;
+
+        .arrow {
+          border: 1px solid white;
+          border-radius: 50%;
+          padding: 0.1rem;
+          margin-left: 1rem;
+        }
       }
     }
 
