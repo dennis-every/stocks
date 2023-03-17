@@ -1,0 +1,28 @@
+nav {
+  background: #4269b3;
+  color: white;
+  font-size: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 5rem;
+  text-transform: uppercase;
+
+  svg {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      color: white;
+    }
+  }
+}
