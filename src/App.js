@@ -1,5 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
+import { useEffect } from 'react';
 import Layout from './components/Layout';
 import Stocks from './pages/Stocks';
 import Stock from './pages/Stock';
@@ -8,6 +9,11 @@ import About from './pages/About';
 import NoMatch from './pages/NoMatch';
 
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

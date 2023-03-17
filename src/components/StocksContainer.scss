@@ -94,3 +94,36 @@
     background-color: #3e61a3;
   }
 }
+
+#searchFormContainer {
+  padding: 0.5rem;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+
+  #searchForm {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .form-control {
+      padding: 0.5rem;
+      font-style: italic;
+      font-size: 1.1rem;
+      border: none;
+    }
+
+    #closeSearch {
+      color: #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
