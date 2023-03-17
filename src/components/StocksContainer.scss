@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .text {
       font-size: 1.8rem;
     }
@@ -69,6 +70,7 @@
         text-align: right;
         padding: 0.5rem;
         color: white;
+
         :first-child {
           border: 1px solid white;
           border-radius: 50%;
@@ -76,6 +78,7 @@
         }
       }
     }
+
     .bottomHalf {
       box-sizing: border-box;
       height: 5rem;
